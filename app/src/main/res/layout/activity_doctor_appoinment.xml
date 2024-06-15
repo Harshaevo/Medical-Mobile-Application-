@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DoctorAppoinment"
+    android:padding="10dp"
+   >
+
+    <TextView
+        android:id="@+id/textappoitnment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Manage Appointment"
+        android:textSize="24dp"
+        android:layout_margin="20dp"
+        />
+
+    <EditText
+        android:id="@+id/AppName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Appointment Name"
+        android:textSize="20dp"
+        android:layout_below="@+id/textappoitnment"
+        />
+
+    <EditText
+        android:id="@+id/AppDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Appointment Date"
+        android:textSize="20dp"
+        android:layout_below="@+id/AppName"
+        />
+
+    <EditText
+        android:id="@+id/AppDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Description"
+        android:textSize="20dp"
+        android:layout_below="@+id/AppDate"
+        />
+    <Button
+        android:id="@+id/btnApInsert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Insert New Data"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/AppDescription"/>
+
+    <Button
+        android:id="@+id/btnApUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Update Data"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/btnApInsert"/>
+
+    <Button
+        android:id="@+id/btnApDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Delete Existing Data"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/btnApUpdate"/>
+
+    <Button
+        android:id="@+id/btnApView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="View Data"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/btnApDelete"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
+

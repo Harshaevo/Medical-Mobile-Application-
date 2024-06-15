@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".Medicine_infor">
+
+    <TextView
+        android:id="@+id/textmedicine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Medicine and Quantity"
+        android:textSize="24dp"
+        android:layout_margin="20dp"
+         />
+
+    <EditText
+        android:id="@+id/Mediname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Drug Name"
+        android:textSize="20dp"
+        android:layout_below="@+id/textmedicine"
+        />
+
+    <EditText
+        android:id="@+id/Mediamount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Quantity"
+        android:textSize="20dp"
+        android:layout_below="@+id/Mediname"
+        />
+
+    <EditText
+        android:id="@+id/Mediprice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Unit Price(LKR)"
+        android:textSize="20dp"
+        android:layout_below="@+id/Mediamount"
+        />
+
+    <EditText
+        android:id="@+id/Medidate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Expire Date"
+        android:textSize="20dp"
+        android:layout_below="@+id/Mediprice"
+        />
+
+    <Button
+        android:id="@+id/btnMedInsert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Insert New Data"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/Medidate"/>
+
+    <Button
+        android:id="@+id/btnMedUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Update Data"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/btnMedInsert"/>
+
+    <Button
+        android:id="@+id/btnMedDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Delete Existing Data"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/btnMedUpdate"/>
+
+    <Button
+        android:id="@+id/btnMedView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="View Data"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/btnMedDelete"/>
+
+</RelativeLayout>

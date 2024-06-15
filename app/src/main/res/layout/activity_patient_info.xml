@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PatientInfo"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/textpatientinfor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Patient Information"
+        android:textSize="24dp"
+        android:layout_margin="20dp"
+        />
+
+    <EditText
+        android:id="@+id/PatName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Patient Name"
+        android:textSize="20dp"
+        android:layout_below="@+id/textpatientinfor"
+        />
+
+    <EditText
+        android:id="@+id/PatAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Age"
+        android:textSize="20dp"
+        android:layout_below="@+id/PatName"
+        />
+
+    <EditText
+        android:id="@+id/PatAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Address"
+        android:textSize="20dp"
+        android:layout_below="@+id/PatAge"
+        />
+
+    <EditText
+        android:id="@+id/PatNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Telephone Number"
+        android:textSize="20dp"
+        android:layout_below="@+id/PatAddress"
+        />
+
+    <EditText
+        android:id="@+id/PatPayments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Payments(LKR)"
+        android:textSize="20dp"
+        android:layout_below="@+id/PatNumber"
+        />
+
+    <Button
+        android:id="@+id/btnPatInsert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Insert New Data"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/PatPayments"/>
+
+    <Button
+        android:id="@+id/btnPatUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Update Data"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/btnPatInsert"/>
+
+    <Button
+        android:id="@+id/btnPatDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Delete Existing Data"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/btnPatUpdate"/>
+
+    <Button
+        android:id="@+id/btnPatView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="View Data"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/btnPatDelete"/>
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
